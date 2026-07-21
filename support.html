@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Delete Account — MIassist</title>
+  <title>Support — MIassist</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -33,8 +33,14 @@
     h1 {
       font-size: 32px;
       font-weight: 700;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
       color: #111;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 40px;
     }
 
     h2 {
@@ -62,19 +68,23 @@
       margin-bottom: 6px;
     }
 
-    .email-link {
-      display: inline-block;
-      margin-top: 8px;
-      background: #111;
-      color: #fff;
-      text-decoration: none;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-size: 15px;
-      font-weight: 500;
+    .contact-card {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
     }
 
-    .email-link:hover { background: #333; }
+    .contact-card p { margin-bottom: 6px; }
+    .contact-card p:last-child { margin-bottom: 0; }
+
+    .contact-card .label {
+      font-size: 13px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
 
     footer {
       text-align: center;
@@ -100,30 +110,27 @@
   </header>
 
   <div class="content">
-    <h1>Delete Your Account</h1>
+    <h1>Support</h1>
+    <p class="meta">We're here to help</p>
 
-    <p>You can request deletion of your MIassist account and all associated data at any time by emailing us at the address below.</p>
+    <p>If you have a question, run into an issue, or need help with your MIassist account, reach out using the contact details below and we'll get back to you as soon as we can.</p>
 
-    <h2>How to Request Deletion</h2>
+    <div class="contact-card">
+      <p class="label">Email</p>
+      <p><a href="mailto:support@miassist.co">support@miassist.co</a></p>
+    </div>
+
+    <div class="contact-card">
+      <p class="label">Phone</p>
+      <p><a href="tel:+17576352228">+1 757-635-2228</a></p>
+    </div>
+
+    <h2>Common Questions</h2>
     <ul>
-      <li>Send an email to <strong>support@miassist.co</strong> from the email address associated with your account</li>
-      <li>Use the subject line: <strong>Account Deletion Request</strong></li>
-      <li>Include your full name and the email address on your account</li>
+      <li>For account or subscription issues, email us with the address you used to sign up.</li>
+      <li>To request deletion of your account and data, visit our <a href="delete-account.html">Delete Account</a> page.</li>
+      <li>For details on how we handle your data, see our <a href="privacy.html">Privacy Policy</a>.</li>
     </ul>
-
-    <p>We will process your request within 30 days and send you a confirmation once your account has been deleted.</p>
-
-    <a class="email-link" href="mailto:support@miassist.co?subject=Account%20Deletion%20Request">Email Us to Delete Your Account</a>
-
-    <h2>What Gets Deleted</h2>
-    <ul>
-      <li>Your account credentials and profile information</li>
-      <li>All inspection data, reports, and photos stored in your account</li>
-      <li>Your saved signature and company logo</li>
-    </ul>
-
-    <h2>What May Be Retained</h2>
-    <p>We may retain certain data as required by law or for legitimate business purposes such as fraud prevention, for a period of up to 90 days after your deletion request is processed.</p>
   </div>
 
   <footer>
