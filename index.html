@@ -263,6 +263,23 @@
   .cred-row span { font-size: 11.5px; letter-spacing: 0.04em; color: var(--ink-faint); }
   .cred-row span b { color: var(--ink-soft); font-weight: 600; }
 
+  .quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    margin-top: 26px;
+    padding-top: 18px;
+    border-top: 1px dashed var(--line);
+    max-width: 56ch;
+  }
+  .quick-links a {
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: var(--ink-faint);
+    text-decoration: none;
+  }
+  .quick-links a:hover { color: var(--accent); }
+
   /* ---------- section framing ---------- */
 
   section { padding: 52px 0; border-top: 1px solid var(--line); }
@@ -510,6 +527,13 @@
         <div class="rise rise-1 eyebrow">MIassist Co LLC</div>
         <h1 class="rise rise-2">Software and expertise for people who inspect things for a living.</h1>
         <p class="rise rise-3">We build field-ready inspection software — starting with MIassist — and we're opening up hands-on consulting for teams ready to move their inspection process off paper.</p>
+        <!-- Interim bridge links: App Store Connect's Support/Marketing URL fields still point at this
+             bare root (pending a metadata-only version bump). Remove once those fields are updated to
+             point directly at support.html / miassist.html. -->
+        <div class="quick-links mono rise rise-3">
+          <a href="miassist.html">→ MIassist app page</a>
+          <a href="support.html">→ Support</a>
+        </div>
       </section>
 
       <section>
