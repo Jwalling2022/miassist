@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MIassist Co LLC</title>
-  <meta name="description" content="Software and inspection consulting for people who inspect things for a living.">
+  <title>Inspection Consulting — MIassist Co LLC</title>
+  <meta name="description" content="Standards-based inspection services and inspection-software consulting.">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
 <style>
   :root {
@@ -54,7 +54,7 @@
     --accent-2-on: #131418;
   }
 
-  .panel.accent-alt {
+  body.consulting, .panel.accent-alt {
     --accent: var(--accent-2);
     --accent-deep: var(--accent-2-deep);
     --accent-on: var(--accent-2-on);
@@ -491,7 +491,7 @@
   .nav-btn, .brand-btn, .panel-cta, .breadcrumb { text-decoration: none; }
 </style>
 </head>
-<body>
+<body class="consulting">
 <div class="shell">
   <header>
     <a class="brand-btn" href="/" aria-label="MIassist Co LLC — Home">
@@ -499,52 +499,49 @@
     </a>
 
     <nav aria-label="Primary">
-      <a class="nav-btn" href="/" aria-current="page">Home</a>
+      <a class="nav-btn" href="/">Home</a>
       <a class="nav-btn" href="software.html">Software</a>
-      <a class="nav-btn" href="consulting.html">Consulting</a>
+      <a class="nav-btn" href="consulting.html" aria-current="page">Consulting</a>
     </nav>
   </header>
 
   <main>
       <section class="hero">
-        <div class="rise rise-1 eyebrow">MIassist Co LLC</div>
-        <h1 class="rise rise-2">Software and expertise for people who inspect things for a living.</h1>
-        <p class="rise rise-3">We build field-ready inspection software — starting with MIassist — and we're opening up hands-on consulting for teams ready to move their inspection process off paper.</p>
+        <div class="eyebrow">Inspection Consulting · 02</div>
+        <h1 style="max-width: 18ch;">Inspection expertise — from the field to the paperwork.</h1>
+        <p>For teams and facilities that need inspection work done right: hands-on inspections under recognized standards, custom software when nothing off-the-shelf fits, and help building the process behind it all.</p>
+        <div class="cred-row mono">
+          <span><b>20+ YEARS</b> as a certified inspection tech</span>
+          <span><b>7 YEARS</b> as an AIA inspector</span>
+          <span><b>7 YEARS</b> commissioned — Delaware &amp; Virginia</span>
+        </div>
       </section>
 
       <section>
-        <div class="section-head">
-          <h2>What we build &amp; offer</h2>
-        </div>
-        <div class="gateway">
-          <div class="panel">
-            <span class="panel-num mono">01 · SOFTWARE</span>
-            <h3>Software</h3>
-            <p>Mobile software for the inspection industry — starting with MIassist: clients, checklists, photo findings, and polished PDF reports.</p>
-            <div class="meta-row mono">
-              <span><b>CATEGORY</b> — Mobile &amp; field software</span>
-              <span><b>PRODUCTS</b> — MIassist, more in development</span>
-            </div>
-            <a class="panel-cta" href="software.html">View Software →</a>
-          </div>
+        <div class="section-head"><h2>What's included</h2></div>
 
-          <div class="panel accent-alt">
-            <span class="panel-num mono">02 · CONSULTING</span>
-            <h3>Inspection Consulting</h3>
-            <p>Standards-based inspection services — plus hands-on help modernizing how your team runs them, from checklist setup to reporting.</p>
-            <div class="meta-row mono">
-              <span><b>STATUS</b> — Taking early inquiries</span>
-              <span><b>FORMAT</b> — Remote or on-site</span>
-            </div>
-            <a class="panel-cta" href="consulting.html">View Consulting →</a>
-          </div>
-        </div>
-      </section>
+        <h3 class="group-label">Inspection Services</h3>
+        <ul class="checklist">
+          <li><span class="box"></span><span><strong>Standards-based inspections</strong><span class="desc">API 653, API 570, API 510, and STI SP001 — performed directly under active certification.</span></span></li>
+          <li><span class="box"></span><span><strong>Drone (UAS) inspections</strong><span class="desc">FAA-licensed remote pilot — visual inspections of tall, hard-to-access, or hazardous structures without scaffolding or rope access.</span></span></li>
+          <li><span class="box"></span><span><strong>NDE &amp; National Board (NBIC) consulting</strong><span class="desc">Backed by 20+ years including AIA and state-commissioned inspection work — advisory and program guidance, with direct inspection performed by a trusted subcontractor where jurisdictional credentials apply.</span></span></li>
+          <li><span class="box"></span><span><strong>Remote or on-site engagements</strong><span class="desc">Scoped to what your team actually needs — no fixed package required.</span></span></li>
+        </ul>
 
-      <section class="about">
-        <div class="section-head"><h2>About</h2></div>
-        <p>MIassist Co LLC is a solo-founder software company built around one problem: give field inspectors better tools than a paper clipboard and a stack of templates. MIassist, our first release, grew directly out of that problem.</p>
-        <p>We're building additional software under the same name, and opening up inspection consulting for teams who want hands-on help getting their process off paper.</p>
+        <h3 class="group-label group-label-2">Software &amp; Process</h3>
+        <ul class="checklist">
+          <li><span class="box"></span><span><strong>Custom software development</strong><span class="desc">Need a specific tool or app? We design, build, and deploy custom software to fit your inspection workflow — not just consulting on it.</span></span></li>
+          <li><span class="box"></span><span><strong>Process &amp; workflow review</strong><span class="desc">How inspections get done today, and where paper is slowing your team down.</span></span></li>
+          <li><span class="box"></span><span><strong>Digital checklist &amp; template setup</strong><span class="desc">Build a digital checklist around any standard, or your own process.</span></span></li>
+          <li><span class="box"></span><span><strong>Report format &amp; documentation guidance</strong><span class="desc">Getting findings into a clean, consistent, audit-ready format.</span></span></li>
+        </ul>
+
+        <div class="contact-card">
+          <p class="contact-lede">Every engagement is scoped and quoted individually — tell us what you're working with and we'll follow up.</p>
+          <div class="row"><span class="label mono">CONSULTING INQUIRIES</span><a href="mailto:support@miassist.co?subject=Consulting%20Inquiry">support@miassist.co</a></div>
+          <div class="row"><span class="label mono">PHONE</span><a href="tel:+13025998539">+1 302-599-8539</a></div>
+          <a class="inquire-btn" href="mailto:support@miassist.co?subject=Consulting%20Inquiry">Send an inquiry</a>
+        </div>
       </section>
   </main>
 
