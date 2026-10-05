@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — MIassist</title>
+  <meta name="description" content="How MIassist collects, uses, and protects your information.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+  :root {
+    --ink: #14151a;
+    --ink-soft: #52565f;
+    --ink-faint: #82858e;
+    --paper: #f4f4f1;
+    --surface: #ffffff;
+    --line: #e0e0da;
+    --accent: #5b4fe3;
+    --accent-deep: #4238b0;
+    --accent-on: #ffffff;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #eeeeec;
+      --ink-soft: #a9acb5;
+      --ink-faint: #7a7d86;
+      --paper: #131418;
+      --surface: #1b1c21;
+      --line: #2b2c33;
+      --accent: #948bff;
+      --accent-deep: #b3acff;
+      --accent-on: #131418;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ink: #eeeeec;
+    --ink-soft: #a9acb5;
+    --ink-faint: #7a7d86;
+    --paper: #131418;
+    --surface: #1b1c21;
+    --line: #2b2c33;
+    --accent: #948bff;
+    --accent-deep: #b3acff;
+    --accent-on: #131418;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 { font-family: "Archivo", -apple-system, sans-serif; text-wrap: balance; margin: 0; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .shell { min-height: 100%; }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 32px;
+    background: color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+
+  .brand-btn { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+
+  .wordmark {
+    display: inline-flex;
+    align-items: baseline;
+    border-bottom: 2.5px solid var(--ink);
+    padding-bottom: 2px;
+    font-family: "Archivo", sans-serif;
+  }
+  .wordmark .m { font-weight: 800; font-size: 21px; color: var(--ink); letter-spacing: -0.01em; }
+  .wordmark .bar {
+    display: inline-block;
+    width: 6px;
+    height: 15px;
+    margin: 0 1px;
+    background: var(--accent);
+    transform: skewX(-14deg);
+    border-radius: 1px;
+  }
+  .wordmark .assist { font-weight: 600; font-size: 21px; color: var(--ink); }
+
+  nav { display: flex; align-items: center; gap: 4px; }
+
+  .nav-btn {
+    text-decoration: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    border-bottom: 2px solid transparent;
+  }
+  .nav-btn[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+  .nav-btn:hover { color: var(--ink); }
+
+  main { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+
+  .breadcrumb {
+    display: inline-block;
+    margin: 40px 0 0;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--ink-faint);
+    text-decoration: none;
+  }
+  .breadcrumb:hover { color: var(--accent); }
+
+  .legal { max-width: 680px; margin: 0 auto; padding: 24px 0 72px; }
+
+  .legal h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 8px; }
+
+  .legal .meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: var(--ink-faint);
+    margin-bottom: 36px;
+  }
+
+  .legal h2 { font-size: 17px; font-weight: 700; margin: 34px 0 10px; }
+
+  .legal p { font-size: 15px; color: var(--ink-soft); line-height: 1.7; margin: 0 0 12px; }
+
+  .legal ul { margin: 8px 0 12px 20px; padding: 0; }
+  .legal ul li { font-size: 15px; color: var(--ink-soft); line-height: 1.7; margin-bottom: 6px; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    margin-top: 20px;
+    padding: 30px 0 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+  footer .links { display: flex; gap: 18px; flex-wrap: wrap; }
+  footer a { color: var(--ink-soft); text-decoration: none; font-size: 13px; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <a class="brand-btn" href="/" aria-label="MIassist Co LLC — Home">
+      <span class="wordmark"><span class="m">M</span><span class="bar"></span><span class="assist">assist</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <a class="nav-btn" href="/">Home</a>
+      <a class="nav-btn" href="/software.html" aria-current="page">Software</a>
+      <a class="nav-btn" href="/consulting.html">Consulting</a>
+    </nav>
+  </header>
+
+  <main>
+    <a class="breadcrumb" href="/miassist.html">← MIassist</a>
+
+    <div class="legal">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Last updated: May 28, 2026</p>
+
+      <p>This Privacy Policy describes how Jonathan Walling (doing business as MIassist) collects, uses, and protects your information when you use the MIassist mobile application. By using the App, you agree to the practices described in this policy.</p>
+
+      <h2>Information We Collect</h2>
+      <p>We collect the following types of information:</p>
+      <ul>
+        <li>Email addresses and passwords for account creation</li>
+        <li>Device identifiers and IP addresses</li>
+        <li>Usage logs and app activity</li>
+        <li>Camera and storage access on mobile devices (when granted by you)</li>
+      </ul>
+      <p>We do not process sensitive personal information beyond what is necessary to provide the service.</p>
+
+      <h2>How We Use Your Information</h2>
+      <p>Your information is used to:</p>
+      <ul>
+        <li>Manage your account and deliver the service</li>
+        <li>Respond to support requests</li>
+        <li>Monitor security and prevent fraud</li>
+        <li>Comply with legal obligations</li>
+      </ul>
+
+      <h2>Third-Party Services</h2>
+      <p>We use the following third-party services to operate the App: Firebase, Google Analytics, and Google Sign-In. These providers may receive your information only as necessary to perform services on our behalf. They cannot use your personal information for any other purpose without our instruction.</p>
+
+      <h2>Data Retention</h2>
+      <p>We retain your data for as long as you have an active account. You may request deletion of your account and associated data at any time by contacting us at <a href="mailto:support@miassist.co">support@miassist.co</a>.</p>
+
+      <h2>Security</h2>
+      <p>We implement technical safeguards to protect your information. However, no electronic transmission over the internet can be guaranteed to be 100% secure. We encourage you to use a strong password and keep your credentials confidential.</p>
+
+      <h2>Children's Privacy</h2>
+      <p>MIassist is intended for professional use by adults. Users under the age of 18 are not permitted to use the service.</p>
+
+      <h2>Your Rights</h2>
+      <p>Depending on your location, you may have the right to request access to, correction of, or deletion of your personal information. You may also withdraw consent or opt out of targeted advertising. To exercise these rights, contact us at <a href="mailto:support@miassist.co">support@miassist.co</a>.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will indicate any changes by updating the date at the top of this page. Continued use of the App after changes constitutes your acceptance of the revised policy.</p>
+
+      <h2>Contact Us</h2>
+      <p>If you have questions about this Privacy Policy, please contact us at <a href="mailto:support@miassist.co">support@miassist.co</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 MIassist Co LLC</span>
+    <div class="links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="/delete-account.html">Delete Account</a>
+      <a href="/support.html">Support</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

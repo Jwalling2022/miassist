@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — MIassist</title>
+  <meta name="description" content="Terms governing use of the MIassist mobile inspection application.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+  :root {
+    --ink: #14151a;
+    --ink-soft: #52565f;
+    --ink-faint: #82858e;
+    --paper: #f4f4f1;
+    --surface: #ffffff;
+    --line: #e0e0da;
+    --accent: #5b4fe3;
+    --accent-deep: #4238b0;
+    --accent-on: #ffffff;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #eeeeec;
+      --ink-soft: #a9acb5;
+      --ink-faint: #7a7d86;
+      --paper: #131418;
+      --surface: #1b1c21;
+      --line: #2b2c33;
+      --accent: #948bff;
+      --accent-deep: #b3acff;
+      --accent-on: #131418;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ink: #eeeeec;
+    --ink-soft: #a9acb5;
+    --ink-faint: #7a7d86;
+    --paper: #131418;
+    --surface: #1b1c21;
+    --line: #2b2c33;
+    --accent: #948bff;
+    --accent-deep: #b3acff;
+    --accent-on: #131418;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 { font-family: "Archivo", -apple-system, sans-serif; text-wrap: balance; margin: 0; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .shell { min-height: 100%; }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 32px;
+    background: color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+
+  .brand-btn { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+
+  .wordmark {
+    display: inline-flex;
+    align-items: baseline;
+    border-bottom: 2.5px solid var(--ink);
+    padding-bottom: 2px;
+    font-family: "Archivo", sans-serif;
+  }
+  .wordmark .m { font-weight: 800; font-size: 21px; color: var(--ink); letter-spacing: -0.01em; }
+  .wordmark .bar {
+    display: inline-block;
+    width: 6px;
+    height: 15px;
+    margin: 0 1px;
+    background: var(--accent);
+    transform: skewX(-14deg);
+    border-radius: 1px;
+  }
+  .wordmark .assist { font-weight: 600; font-size: 21px; color: var(--ink); }
+
+  nav { display: flex; align-items: center; gap: 4px; }
+
+  .nav-btn {
+    text-decoration: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    border-bottom: 2px solid transparent;
+  }
+  .nav-btn[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+  .nav-btn:hover { color: var(--ink); }
+
+  main { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+
+  .breadcrumb {
+    display: inline-block;
+    margin: 40px 0 0;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--ink-faint);
+    text-decoration: none;
+  }
+  .breadcrumb:hover { color: var(--accent); }
+
+  .legal { max-width: 680px; margin: 0 auto; padding: 24px 0 72px; }
+
+  .legal h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 8px; }
+
+  .legal .meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: var(--ink-faint);
+    margin-bottom: 36px;
+  }
+
+  .legal h2 { font-size: 17px; font-weight: 700; margin: 34px 0 10px; }
+
+  .legal p { font-size: 15px; color: var(--ink-soft); line-height: 1.7; margin: 0 0 12px; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    margin-top: 20px;
+    padding: 30px 0 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+  footer .links { display: flex; gap: 18px; flex-wrap: wrap; }
+  footer a { color: var(--ink-soft); text-decoration: none; font-size: 13px; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <a class="brand-btn" href="/" aria-label="MIassist Co LLC — Home">
+      <span class="wordmark"><span class="m">M</span><span class="bar"></span><span class="assist">assist</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <a class="nav-btn" href="/">Home</a>
+      <a class="nav-btn" href="/software.html" aria-current="page">Software</a>
+      <a class="nav-btn" href="/consulting.html">Consulting</a>
+    </nav>
+  </header>
+
+  <main>
+    <a class="breadcrumb" href="/miassist.html">← MIassist</a>
+
+    <div class="legal">
+      <h1>Terms of Service</h1>
+      <p class="meta">Last updated: October 5, 2026</p>
+
+      <p>These Terms of Service govern use of the MIassist mobile inspection application operated by Jonathan Walling, doing business as MIassist. By downloading or using the App, you agree to be bound by these Terms.</p>
+
+      <h2>1. Use of the App</h2>
+      <p>MIassist functions as a professional mobile inspection tool for qualified field inspectors. Users must be at least 18 years old and agree to use the application only for lawful purposes consistent with these Terms.</p>
+
+      <h2>2. Account Registration</h2>
+      <p>Accessing certain App features requires account creation. Users bear responsibility for protecting login credentials and all account activity. Any unauthorized access should be reported immediately to <a href="mailto:support@miassist.co">support@miassist.co</a>.</p>
+      <p>Accounts are personal to the individual inspector and may not be shared, sold, or used by more than one person. The account holder is solely responsible for all reports, findings, and activity submitted under their account, regardless of who performed the work. Account sharing is a violation of these Terms and grounds for suspension or termination under Section 11.</p>
+
+      <h2>3. Inspection Data and Content</h2>
+      <p>Users retain ownership of inspection data, reports, photos, and other materials created through the App. Users alone are accountable for the accuracy, completeness, and legality of their content. The company does not review, verify, or endorse inspection findings or reports.</p>
+
+      <h2>4. Professional Responsibility</h2>
+      <p>The App assists professional inspectors but does not substitute for professional judgment, certifications, or qualifications required under applicable codes and standards, including API 510, API 570, API 653, and STI SP001. Users must ensure inspections comply with applicable regulations and their professional qualifications.</p>
+
+      <h2>5. Subscription and Payment</h2>
+      <p>Paid subscription features are processed through Apple App Store or Google Play Store. Subscription fees are charged in advance and are non-refundable except as required by law or app store policies.</p>
+
+      <h2>6. Intellectual Property</h2>
+      <p>The App, including design, features, and underlying technology, belongs to Jonathan Walling / MIassist and is protected by intellectual property laws. Users may not copy, modify, distribute, or reverse engineer any App component.</p>
+
+      <h2>7. Privacy</h2>
+      <p>App use is governed by the <a href="privacy.html">Privacy Policy</a>, incorporated by reference into these Terms.</p>
+
+      <h2>8. Disclaimer of Warranties</h2>
+      <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. The company does not warrant uninterrupted, error-free, or virus-free operation.</p>
+
+      <h2>9. Limitation of Liability</h2>
+      <p>To the maximum extent permitted by law, Jonathan Walling / MIassist is not liable for indirect, incidental, special, consequential, or punitive damages from App use. Total liability is limited to amounts paid for the App in the preceding twelve months.</p>
+
+      <h2>10. Indemnification</h2>
+      <p>Users agree to indemnify and protect Jonathan Walling / MIassist from claims, damages, losses, or expenses, including attorney fees, arising from App use, Terms violations, or third-party rights violations.</p>
+
+      <h2>11. Termination</h2>
+      <p>The company reserves the right to suspend or terminate accounts for Terms violations. Users may delete accounts by contacting <a href="mailto:support@miassist.co">support@miassist.co</a>.</p>
+
+      <h2>12. Changes to These Terms</h2>
+      <p>Terms may be updated periodically. Material changes are indicated by updating the date at the top of this document. Continued App use after updates constitutes acceptance of the revised Terms.</p>
+
+      <h2>13. Governing Law</h2>
+      <p>These Terms are governed by Delaware law, without regard to conflict of law provisions.</p>
+
+      <h2>14. Contact Us</h2>
+      <p>Questions about these Terms should be directed to Jonathan Walling / MIassist at <a href="mailto:support@miassist.co">support@miassist.co</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 MIassist Co LLC</span>
+    <div class="links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="/delete-account.html">Delete Account</a>
+      <a href="/support.html">Support</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
